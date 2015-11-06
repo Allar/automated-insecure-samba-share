@@ -1,5 +1,5 @@
 # automated-insecure-samba-share
-This script will automatically install Samba and create a share named `Drop` located at `/home/Drop`
+This script will automatically install Samba and create a share named `Drop` located at `/home/Drop`. This Samba share will have no security and will be completely insecure. You will have full access to this share in Windows without needing credentials, a login, or a password.
 
 # Warning
 
@@ -15,6 +15,6 @@ chmod +x automated-insecure-samba-share.sh
 ./automated-insecure-samba-share.sh
 ```
 
-Running these three commands will set up a Samba share named `Drop` at `/home/Drop` and reboot your server. When your server comes back online, your Samba share should be accessible without any form of credentials, login, or password.
+Running these three commands will set up a Samba share named `Drop` at `/home/Drop` and reboot your server. When your server comes back online, your Samba share should be accessible without any form of credentials, a login, or a password.
 
 If you don't see your Samba share in Windows, try manually navigating a Windows Explorer to `\\YourServerHostName`
