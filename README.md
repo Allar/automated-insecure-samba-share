@@ -1,5 +1,5 @@
 # automated-insecure-samba-share
-This script will automatically install Samba and create a share named Drop located at /home/Drop
+This script will automatically install Samba and create a share named `Drop` located at `/home/Drop`
 
 # Warning
 
@@ -14,3 +14,5 @@ wget https://raw.githubusercontent.com/Allar/automated-insecure-samba-share/mast
 chmod +x automated-insecure-samba-share.sh
 ./automated-insecure-samba-share.sh
 ```
+
+Running these three commands will set up a Samba share named `Drop` at `/home/Drop` and reboot your server. When your server comes back online, your Samba share should be accessible without any form of credentials, login, or password.
