@@ -1,7 +1,6 @@
 #!/bin/bash 
 my_name=$(whoami)
 
-sudo apt-get update
 sudo apt-get install samba
 sudo ufw allow samba
 
@@ -13,5 +12,6 @@ sudo wget https://cdn.rawgit.com/Allar/automated-insecure-samba-share/master/smb
 sudo sed -i "s/YOUR_USERNAME_HERE/$my_name/g" /etc/samba/smb.conf
 sudo sed -i "s/YOUR_SERVER_HOSTNAME_HERE/$HOSTNAME/g" /etc/samba/smb.conf
 
-# sudo reboot
+rm automated-insecure-samba-share.sh
 
+sudo reboot
