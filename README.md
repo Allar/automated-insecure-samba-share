@@ -16,3 +16,5 @@ chmod +x automated-insecure-samba-share.sh
 ```
 
 Running these three commands will set up a Samba share named `Drop` at `/home/Drop` and reboot your server. When your server comes back online, your Samba share should be accessible without any form of credentials, login, or password.
+
+If you don't see your Samba share in Windows, try manually navigating a Windows Explorer to `\\YourServerHostName`
